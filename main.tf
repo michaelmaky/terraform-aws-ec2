@@ -4,3 +4,8 @@ module "apiserver" {
   instance_type = "t2.micro"
   instance_name = "test1"
 }
+
+module "static_website" {
+  source      = "./modules/static-website"
+  bucket_name = "cdn.socloudtech.com"
+}
